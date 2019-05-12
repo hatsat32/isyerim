@@ -1,11 +1,13 @@
 extends ../templates/base
 
 block content
+    .alert.alert-dismissible.alert-secondary.text-center
+        h2 HABER EKLE
     form(action='/addnew' method="post")
         .form-group
-            label(for='title') Ba&scedil;l&imath;k:
+            label(for='title') Başlık:
             input#title.form-control(type='title', name="title")
         .form-group
-            label(for='content') Password:
+            label(for='content') İçerik:
             textarea#content.form-control(rows='5' name="content")
         button.btn.btn-primary.btn-block(type='submit') Haberi Kaydet

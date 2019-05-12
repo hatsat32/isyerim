@@ -104,7 +104,7 @@ router.post('/register', function(req, res, next) {
 	}
 });
 router.get('/dashboard', isAuthenticated, function(req, res, next) {
-	res.render('pages/profile', {
+	res.render('pages/dashboard', {
 		isAuth: req.isAuthenticated(),
 		title: 'profile',
 	});
