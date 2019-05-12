@@ -1,0 +1,11 @@
+extends ../templates/base
+
+block content
+    .alert.alert-dismissible.alert-secondary.text-center
+        h2 HABERLER
+    - for(let i=0; i<veri.length; i++) {
+        .card.text-white.bg-secondary.mb-3
+            .card-header.bg-primary #{veri[i].baslik}
+            .card-body
+                pre #{veri[i].icerik}
+    - }

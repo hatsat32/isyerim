@@ -1,0 +1,18 @@
+extends ../templates/base
+
+block content
+    .container
+        .row.justify-content-center.align-items-center(style='height:60vh')
+            .col-6
+                .card
+                    h3.card-header.text-center Giriş Yap
+                    .card-body
+                        - if(message){
+                            p(style='color:red') #{message}
+                        - }
+                        form(action='/login' method="post" autocomplete='on')
+                            .form-group
+                                input.form-control(type='text' name='username' placeholder="username")
+                            .form-group
+                                input.form-control(type='password' name='password' placeholder="password")
+                            button#sendlogin.btn.btn-block.btn-primary(type='submit') Giriş Yap

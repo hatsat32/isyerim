@@ -1,0 +1,32 @@
+extends templates/base
+
+block content
+    #demo.carousel.slide(data-ride='carousel' style="max-height: 500px;")
+        // Indicators
+        ul.carousel-indicators
+            li.active(data-target='#demo' data-slide-to='0')
+            li(data-target='#demo' data-slide-to='1')
+            li(data-target='#demo' data-slide-to='2')
+        // The slideshow
+        .carousel-inner
+            .carousel-item.active
+                img(src='img/golang.png' alt='Los Angeles' class="img-fluid")
+            .carousel-item
+                img(src='img/rust.png' alt='Chicago' class="img-fluid"  style="max-height: 500px;")
+            .carousel-item
+                img(src='img/python.png' alt='New York' class="img-fluid")
+        // Left and right controls
+        a.carousel-control-prev(href='#demo' data-slide='prev')
+            span.carousel-control-prev-icon
+        a.carousel-control-next(href='#demo' data-slide='next')
+            span.carousel-control-next-icon
+
+    .jumbotron.mt-4
+        h1.display-3(style="margin-bottom: 0px") Hello, world!
+        p.lead Dünyanın en iyi teknolojileri ile tanışmaya hazır ol.
+        hr.my-2
+        p It uses utility classes for typography and spacing to space content out within the larger container.
+        p.lead
+        a.btn.btn-primary.btn-lg(href='/products') Daha fazlasını öğren
+
+    

@@ -1,0 +1,26 @@
+extends ../templates/base
+
+block content
+    .alert.alert-dismissible.alert-secondary.text-center
+        h2 İLETİŞİM İSTEKLERİ
+
+    - for(let i=0; i<veri.length; i++) {
+        .card
+            .card-header.bg-primary İstek #{veri[i].id}
+            .card-body
+                table.table
+                    tr
+                        th isim
+                        td #{veri[i].isim}
+                    tr
+                        th soyisim
+                        td #{veri[i].soyisim}
+                    tr
+                        th email
+                        td #{veri[i].email}
+                    tr
+                        th telefon
+                        td #{veri[i].tel}
+                p #{veri[i].mesaj}
+    - }
+                

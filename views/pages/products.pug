@@ -1,0 +1,66 @@
+extends ../templates/base
+
+block content
+    .alert.alert-dismissible.alert-secondary.text-center
+        h2 ÜRÜNLER
+    .row
+        .col-md-6
+            .alert.alert-dismissible.alert-primary
+                strong Son teknoloji!
+                p Her ürünümüzde son teknolojiyi kullanırız
+            .alert.alert-dismissible.alert-danger
+                strong Daima ilk!
+                p Daima en iyi ürünleri ilk yaprız
+        .col-md-6
+            .alert.alert-dismissible.alert-info
+                strong Güvenli!
+                p Her zaman güvenli. Her zaman
+            .alert.alert-dismissible.alert-warning
+                strong Kullanışlı!
+                p En güzel arayüz ve en iyi kullanıcı deneyimi
+    .pricing-header.px-3.py-3.pt-md-5.pb-md-4.mx-auto.text-center
+        h1.display-4 Ücretlendirme
+        p.lead
+            | Quickly build an effective pricing table for your potential customers with this Bootstrap example. It&apos;s built with default Bootstrap components and utilities with little customization.
+    
+    .card-deck.mb-3.text-center
+        .card.mb-4.box-shadow
+            .card-header
+                h4.my-0.font-weight-normal Free
+            .card-body
+                h1.card-title.pricing-card-title
+                    | 0 ₺ 
+                    small.text-muted / ay
+                ul.list-unstyled.mt-3.mb-4
+                    li 10 kullanıcı
+                    li 2 GB depolama
+                    li Email destek
+                    li Yardım formu
+                button.btn.btn-lg.btn-block.btn-outline-primary(type='button') Ücretsiz kayıt ol
+        .card.mb-4.box-shadow
+            .card-header
+                h4.my-0.font-weight-normal Pro
+            .card-body
+                h1.card-title.pricing-card-title
+                    | 15 ₺ 
+                    small.text-muted / ay
+                ul.list-unstyled.mt-3.mb-4
+                    li 20 kullanıcı
+                    li 10 GB depolama
+                    li Öncelikli email destek
+                    li Yardım formu
+                button.btn.btn-lg.btn-block.btn-primary(type='button') Hemen Başla
+        .card.mb-4.box-shadow
+            .card-header
+                h4.my-0.font-weight-normal Enterprise
+            .card-body
+                h1.card-title.pricing-card-title
+                    | 29 ₺ 
+                    small.text-muted / ay
+                ul.list-unstyled.mt-3.mb-4
+                    li 30 kullanıcı
+                    li 15 GB depolama
+                    li Telefon ve email destek
+                    li Yardım formu
+                button.btn.btn-lg.btn-block.btn-primary(type='button') Bizimle İletişie geç
+

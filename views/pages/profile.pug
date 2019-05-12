@@ -1,0 +1,11 @@
+extends ../templates/base
+
+block content
+    form(action='/addnew' method="post")
+        .form-group
+            label(for='title') Ba&scedil;l&imath;k:
+            input#title.form-control(type='title', name="title")
+        .form-group
+            label(for='content') Password:
+            textarea#content.form-control(rows='5' name="content")
+        button.btn.btn-primary.btn-block(type='submit') Haberi Kaydet
